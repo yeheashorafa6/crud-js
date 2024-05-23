@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+
+    --primary-color : #373B3E;
+    --dark-color : black;
+    --light-color : white;
+}
+body{
+    background-color: var(--dark-color) !important;
+}
+
+h1 ,h2 ,h3 ,h4  , p , label {
+    color: var(--light-color);
+}
+
+.container{
+  background-color: var(--primary-color);
+  margin-top: 20px;
+  border: 1px solid rgba(251, 229, 229, 0.3);
+  border-radius: 20px;
+}
+
+.container .title{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .title h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.container .title p {
+    font-size: 20px;
+    
+}
+
+input{
+    font-size: 17px !important;
+
+}
+
+form .total{
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form .total::before{
+    content: 'Total : ';
+}
+.form-control:focus{
+    border-color:transparent !important ;
+    box-shadow: none !important;
+}
+
+button[type='submit']{
+    border-radius: 10px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .3s ease-in;
+
+}
+
+button[type='submit']:hover{
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+button[type='submit'].update ,button[type='submit'].delete{
+    padding: 5px;
+    font-size: 16px !important;
+    font-weight:light ;
+
+}
+
+
+.form-control.deleteAll{
+    margin-bottom: 10px;
+    font-size:20px ;
+    font-family: 600;
+
+}
